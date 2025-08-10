@@ -1,0 +1,25 @@
+{
+  "name": "wp-landing-slimmer",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "wp-slim": "./cli.mjs"
+  },
+  "description": "Shrink a WordPress/Elementor landing page into a single-file HTML by pruning unused CSS (with optional visual diff guard).",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cssnano": "^6.0.1",
+    "jsdom": "^24.0.0",
+    "node-fetch": "^3.3.2",
+    "postcss": "^8.4.38",
+    "purgecss": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "puppeteer": "^22.13.1",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0"
+  }
+}
